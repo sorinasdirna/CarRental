@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarRental - Contact</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rent a car with cheap deals and special promotions.">
+    <meta name="keywords" content="rent a car, car, car rental">
+    <meta name="author" content="Sorina Sdirna">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Jump to main content</a>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/">
+                    <span class="header-logo_text"><strong>Car</strong>Rental</span>
+                </a>
+            </div>    
+            <div class="header-toggle-contrast">
+                <button aria-label="Toggle Contrast">
+                    <span class="sr-only">Toggle Contrast</span>
+                    <span class="header-toggle-contrast_bar"></span>
+                    <span class="header-toggle-contrast_bar"></span>
+                    <span class="header-toggle-contrast_bar"></span>
+                </button>
+            </div>
+            <div class="header-toggle-menu">
+                <button aria-controls="nav-header" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="sr-only">Toggle Menu</span>
+                    <span class="header-toggle-menu_bar"></span>
+                    <span class="header-toggle-menu_bar"></span>
+                    <span class="header-toggle-menu_bar"></span>
+                </button>
+            </div>
+            <div class="header-navigation">
+                <nav id="nav-header" class="nav nav--main" aria-hidden="true">
+                    <ul class="level1" role="menu">
+                        <li>
+                            <a href="/index.html" aria-current="page" role="menuitem">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html" role="menuitem">About</a>
+                        </li>
+                        <li>
+                            <a href="/cars.html" role="menuitem">Cars</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" role="menuitem">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/faq.html" role="menuitem">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+            <div class="banner" role="banner">
+                <div class="banner_inner">
+                    <h1>Contact</h1>
+                    <figure>
+                        <img src="media/images/road.jpg" alt="Contact Banner">     
+                    </figure>              
+                </div>        
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <main id="main" class="main">
+        <section class="contact-info">
+            <div class="container">
+                <h3>Contact Information</h3>
+                <p>000-000-0000</p>
+                <p>Lorem ipsum Location</p>
+                <p>test@test.com</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <div class="container">
+                <h2 class="title">Request Information</h2>
+                <form class="form form--contact" method="post" action="#">
+                    <div class="form_item form_item--name">
+                        <label for="name" class="sr-only">Enter name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form_item form_item--email">
+                        <label for="email" class="sr-only">Enter email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form_item form_item--subject">
+                        <label for="subject" class="sr-only">Enter subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form_item form_item--message">
+                        <label for="message" class="sr-only">Enter message</label>
+                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form_item form_item--button">
+                        <input type="submit" class="button" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section-map">
+            <div class="container">
+                <h2>Location</h2>
+                <iframe id="google-map" 
+                    title="Google Maps iframe"
+                    width="600" height="450" 
+                    style="border:0;" 
+                    allowfullscreen=""
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11418.590815729005!2d23.8066541!3d44.3171925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe5c1e7122ca64ce!2sIQuest!5e0!3m2!1sen!2sro!4v1580737532083!5m2!1sen!2sro" >
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="/">
+                    <span class="footer-logo_text"><strong>Car</strong>Rental</span>
+                </a>
+            </div> 
+            <div class="footer-quicklinks"> 
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#" target="_blank">Blog <span class="sr-only">(Opens in new window)</span></a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>  
+            </div>
+            <div class="footer-contact"> 
+                <p>000-000-0000</p>
+                <p>Lorem ipsum Location</p>
+                <p>test@test.com</p>
+            </div>
+            <div class="footer-socials"> 
+                <ul>
+                    <li><a href="#" target="_blank"><span class="sr-only">Facebook (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Twitter (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Youtube (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Linkedin (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Instagram (Opens in new window)</span></a></li>
+                </ul>  
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2020 CarRental, Inc.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#main" class="back-to-top">
+        <span class="sr-only">Back to top</span>
+    </a>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

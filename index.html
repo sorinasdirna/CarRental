@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarRental - Home</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rent a car with cheap deals and special promotions.">
+    <meta name="keywords" content="rent a car, car, car rental">
+    <meta name="author" content="Sorina Sdirna">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Jump to main content</a>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/">
+                    <span class="header-logo_text"><strong>Car</strong>Rental</span>
+                </a>
+            </div>    
+            <div class="header-toggle-contrast">
+                <button aria-label="Toggle Contrast">
+                    <span class="sr-only">Toggle Contrast</span>
+                    <span class="header-toggle-contrast_bar"></span>
+                    <span class="header-toggle-contrast_bar"></span>
+                    <span class="header-toggle-contrast_bar"></span>
+                </button>
+            </div>
+            <div class="header-toggle-menu">
+                <button aria-controls="nav-header" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="sr-only">Toggle Menu</span>
+                    <span class="header-toggle-menu_bar"></span>
+                    <span class="header-toggle-menu_bar"></span>
+                    <span class="header-toggle-menu_bar"></span>
+                </button>
+            </div>
+            <div class="header-navigation">
+                <nav id="nav-header" class="nav nav--main" aria-hidden="true">
+                    <ul class="level1" role="menu">
+                        <li>
+                            <a href="/index.html" aria-current="page" role="menuitem">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html" role="menuitem">About</a>
+                        </li>
+                        <li>
+                            <a href="/cars.html" role="menuitem">Cars</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" role="menuitem">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/faq.html" role="menuitem">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+            <div class="banner" role="banner">
+                <div class="banner_inner">
+                    <h1>Drive the car of your dreams</h1>
+                    <p>Let's find a great deal for you! <a href="#" class="button">Book Now</a></p>
+                    <video autoplay loop>
+                        <source src="media/videos/home-banner-video.mp4" type="video/mp4" />
+                        <source src="media/videos/home-banner-video.webm" type="video/webm" />
+                        <p>Sorry, your browser doesn't support embedded videos. Here is a <a href="media/videos/home-banner-video.mp4">link to the video</a> instead.</p>
+                    </video>
+                </div>        
+            </div>
+        </div>
+    </header>
+    
+    <!-- content -->
+    <main id="main" class="main">
+        <aside>
+            <h2 class="title">Search Options</h2>
+            <form class="form form--search" method="post" action="#">
+                <div class="form_item form_item--type">
+                    <label for="type" class="sr-only">Select type</label>
+                    <select id="type" name="type">
+                        <option value="">Any Type</option>
+                        <option value="Coupe">Coupe</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                    </select>
+                </div>
+                <div class="form_item form_item--brand">
+                    <label for="brand" class="sr-only">Select brand</label>
+                    <select id="brand" name="brand">
+                        <option value="">Any Brand</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Lexus">Lexus</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="MINI">MINI</option>
+                        <option value="Porsche">Porsche</option>
+                    </select>
+                </div>
+                <div class="form_item form_item--button">
+                    <input type="submit" class="button" value="Search">
+                </div>
+            </form>
+        </aside>
+        <section class="section-car-types">
+            <div class="container">
+                <h2 class="title">Choose car type</h2>
+                <div class="grid">
+                    <div class="col col--1-of-4 col--md-1-of-1">
+                        <figure>
+                            <img src="media/images/coupe/mustang-shelby-2019.png" alt="Coupe car type">
+                        </figure>
+                        <h3>Coupe</h3>
+                        <a href="#" aria-label="See more Coupe types" class="button button--more">View All</a>
+                    </div>
+                    <div class="col col--1-of-4 col--md-1-of-1">
+                        <figure>
+                            <img src="media/images/sedan/bmw-7er-2019.png" alt="Sedan car type">
+                        </figure>
+                        <h3>Sedan</h3>
+                        <a href="#" aria-label="See more Sedan types" class="button button--more">View All</a>
+                    </div>
+                    <div class="col col--1-of-4 col--md-1-of-1">
+                        <figure>
+                            <img src="media/images/SUV/gmc-yukon-schwarz-2018.png" alt="SUV car type">
+                        </figure>
+                        <h3>SUV</h3>
+                        <a href="#" aria-label="See more SUV types" class="button button--more">View All</a>
+                    </div>
+                    <div class="col col--1-of-4 col--md-1-of-1">
+                        <figure>
+                            <img src="media/images/convertible/chevrolet-corvette-cabrio-2014.png" alt="Convertible car type">
+                        </figure>
+                        <h3>Convertible</h3>
+                        <a href="#" aria-label="See more Convertible types" class="button button--more">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-why-us">
+            <div class="container">
+                <h2 class="title">Why CarRental</h2>
+                <div class="grid">
+                    <div class="col col--1-of-3 col--md-1-of-1">
+                        <figure>
+                            <img src="images/whyUs-1.svg" alt="Why CarRental Icon 1">
+                        </figure>
+                        <h4>Lorem Ipsum dolor sit</h4>
+                        <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut.</p>
+                    </div>
+                    <div class="col col--1-of-3 col--md-1-of-1">
+                        <figure>
+                            <img src="images/whyUs-1.svg" alt="Why CarRental Icon 1">
+                        </figure>
+                        <h4>Lorem Ipsum dolor sit</h4>
+                        <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut.</p>
+                    </div>
+                    <div class="col col--1-of-3 col--md-1-of-1">
+                        <figure>
+                            <img src="images/whyUs-1.svg" alt="Why CarRental Icon 1">
+                        </figure>
+                        <h4>Lorem Ipsum dolor sit</h4>
+                        <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-quotes">
+            <div class="container">
+                <h2 class="title">What our clients say</h2>
+                <div class="section-quotes_item">
+                    <figure>
+                        <img src="media/images/JohnDoe.jpg" alt="John Doe Portrait">
+                    </figure>
+                    <h3>John Doe</h3>
+                    <span>April 27, 2019</span>
+                    <blockquote><p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.</p></blockquote>
+                </div>
+                <div class="section-quotes_item">
+                    <figure>
+                        <img src="media/images/JaneDoe.jpg" alt="Jane Doe Portrait">
+                    </figure>
+                    <h3>Jane Doe</h3>
+                    <span>April 27, 2019</span>
+                    <blockquote><p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.</p></blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="/">
+                    <span class="footer-logo_text"><strong>Car</strong>Rental</span>
+                </a>
+            </div> 
+            <div class="footer-quicklinks"> 
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#" target="_blank">Blog <span class="sr-only">(Opens in new window)</span></a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>  
+            </div>
+            <div class="footer-contact"> 
+                <p>000-000-0000</p>
+                <p>Lorem ipsum Location</p>
+                <p>test@test.com</p>
+            </div>
+            <div class="footer-socials"> 
+                <ul>
+                    <li><a href="#" target="_blank"><span class="sr-only">Facebook (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Twitter (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Youtube (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Linkedin (Opens in new window)</span></a></li>
+                    <li><a href="#" target="_blank"><span class="sr-only">Instagram (Opens in new window)</span></a></li>
+                </ul>  
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2020 CarRental, Inc.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#main" class="back-to-top">
+        <span class="sr-only">Back to top</span>
+    </a>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
